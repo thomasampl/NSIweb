@@ -65,20 +65,40 @@
             <legend>Prend ton fruit:</legend>
 
             <div>
-              <input type="checkbox" id="Mangue" name="Mangue"
+              <input type="checkbox" id="Fruit" name="Mangue"
                      checked>
               <label for="Mangue">Mangue</label>
             </div>
 
             <div>
-              <input type="checkbox" id="Pomme" name="Pomme">
+              <input type="checkbox" id="Fruit" name="Pomme">
               <label for="Pomme">Pomme</label>
             </div>
             <div>
-              <input type="checkbox" id="Poire" name="Poire">
+              <input type="checkbox" id="Fruit" name="Poire">
               <label for="Poire">Poire</label>
             </div>
         </fieldset>
+          
+
+
+        <p>Bouton evenement:</p>
+
+        <button id="bouton">Clic</button>
+
+        <p id="clic"></p>
+
+        <script>
+        const element = document.getElementById("bouton");
+        element.addEventListener("click", function() {
+          document.getElementById("clic").innerHTML = "id:Fruit" ;
+        });
+          
+         console.log(document.getElementbyId(id='Fruit'))
+         console.log(document.getElementbyId(id='name'))
+        </script>      
+          
+          
           
           
           
@@ -87,3 +107,9 @@
         <div id="ans"></div>
         <script src="script.js"></script>
       
+      
+      
+      
+    </body>
+</html>
+
