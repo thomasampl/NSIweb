@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Nsiweb</title>
-</head>
-<body>
+<html lang='fr'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>NSI Web</title>        
+    </head>
+    <body>
+        <div>
+            <h3>Liste à puces </h3>
 
-  <ul>
-    <li>liste</li>
-    <li>liste</li>
-    <li>liste</li>
-  </ul>
-  
-  <table>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-  </table>
-  
-</body>
+             <ul>
+                <li>Élément 1</li>
+                <li>Élément 2</li>
+                <li>Élément 3</li>
+                <li>Élément 4</li>
+                <li>Élément 5</li>
+                <li>Élément 6</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Tableau de valeurs quelconques</h3>
+            
+            <table>
+                <tr>
+                    <td>X</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div>
+            <label for="name">Choisi un prénom :</label>
+            <select name="prenom" id="name">
+                <option value="" selected>--Fait ton choix--</option>
+                <option value="pierre">Pierre</option>
+                <option value="paul">Paul</option>
+            </select>
+        </div>
+
+        <div id="ans"></div>
+        <script src="script.js"></script>
+    </body>
 </html>
